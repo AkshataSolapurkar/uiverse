@@ -1,0 +1,659 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Euclid Circular A,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+/*some common css starts here*/
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+/*some common css ends here*/
+
+/*header starts here*/
+.uppermost{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.head .logo{
+    width: 153px;
+    height: 32px;
+    vertical-align: middle;
+}
+.head .navigation{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 32px;
+}
+.head .navigation li a{
+    color: rgb(255 255 255);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.head .btn{
+    background-color: rgb(41 84 255);
+    color: rgb(255 255 255);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+/*banner starts*/
+.banner{
+    padding-top: 208px;
+    position: relative;
+    display: block;
+ 
+}
+.backgradiant{
+    background-image: radial-gradient(80.36% 100% at 50% 0,#20399e 0,#121926 100%);
+    transform: rotate(180deg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 0;
+}
+.texture{
+    left: 0;
+    background-image: url(https://copperx.io/_next/static/media/copper-lines.6acf35fe.svg);
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 60%;
+    bottom: 0;
+    position: absolute;
+    z-index: 1;
+}
+.herohead{
+    position: relative;
+    text-align: left;
+    z-index: 2;
+}
+.banner .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+
+}
+.banner .container .text{
+ display: flex;
+ justify-content: space-around;
+ margin-bottom: 40px;
+ gap: 32px;
+}
+.banner .container .text h1{
+   line-height: 72px;
+   color: rgb(255 255 255);
+   font-weight: 400;
+   font-size: 60px;
+   
+}
+.banner .container .text .sidetext p{
+    font-size: 17.92px;
+    line-height: 1.75;
+    margin-bottom: 16px;
+    color: rgb(255 255 255);
+    max-width: 75%;
+
+}
+.banner .container .text .sidetext a{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: rgb(41 84 255);
+    text-decoration: none;
+    cursor: pointer;
+}
+.banner .container .picture{
+      width: 100%;
+}
+.banner .container .picture img{
+    display: block;
+    max-width: 100%;
+
+}
+.relativecard .container{
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.relativecard .container h1{
+    line-height: 72px;
+    font-size: 48px;
+    margin-bottom: 5rem;
+    text-align: center;
+    max-width: 782px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: inherit;
+}
+.relativecard .container .uppercard{
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-image: linear-gradient(0deg,#f6f6f6 4.87%,hsla(0,0%,96%,0) 96.19%);
+    border-color: rgb(236 237 238);
+    border-style: solid;
+    opacity: 1;
+    border-width: 1px;
+    border-radius: 32px;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+}
+
+.relativecard .container .uppercard img{
+    display: block;
+    width: 517px;
+    height: 453px;
+    
+}
+.relativecard .container .uppercard .matter{
+    text-align: center;
+    margin-bottom: 0;
+    /* max-width: 384px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.relativecard .container .uppercard span{
+    color: rgb(27,66,224);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    background-color: rgb(209 218 255);
+    border-radius: 24px;
+}
+.relativecard .container .uppercard h3{
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(18 25 38);
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.relativecard .container .uppercard p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    max-width: 57%;
+    margin-bottom: 1.75rem;
+    color: rgb(18 25 38);
+}
+.relativecard .container .uppercard .button{
+    color: rgb(255 255 255);
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: rgb(0 0 0);
+    border-radius: 8px;
+    text-decoration: none;
+    
+}
+.relativecard .container .lowercard{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-top: 24px;
+
+
+}
+.relativecard .container .lowercard .left{
+    border-color: rgb(236 237 238);
+    border-width: 1px;
+    border-radius: 32px;
+    border-style: solid;
+    max-width: 50%;
+    padding-bottom: 40px;
+    background-image: linear-gradient(0deg,#f6f6f6 4.87%,hsla(0,0%,96%,0) 96.19%);
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.relativecard .container .lowercard .left img{
+
+    display: block;
+
+    height: 324px;
+    width: 536px;
+}
+/*.relativecard .container .lowercard .left .textmatter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}*/
+.relativecard .container .lowercard .left h3{
+    font-size: 32px;
+    line-height: 40px;
+    color: rgb(18 25 38);
+    font-weight: 500;
+    margin-bottom: 8px;
+
+}
+.relativecard .container .lowercard .left p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(18 25 38);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 28px;
+
+}
+.relativecard .container .lowercard .left span{
+    line-height: 16px;
+    font-weight: 500;
+    font-size: .75rem;
+    color: rgb(18 25 38);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background-color: #12192614;
+    border-radius: 24px;
+    /* margin-top: 24px;*/
+}
+.playcard{
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 128px;
+}
+.playcard .picabsolute{
+    position: absolute;
+    background-image: radial-gradient(80.36% 100% at 50% 0,#20399e 0,#121926 100%);
+    transform: rotate(180deg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.playcard .container{
+    position: relative;
+}
+.playcard .container .matter h2{
+    color: rgb(255 255 255);
+    max-width: 890px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: inherit;
+    line-height: 72px;
+    font-size: 48px;
+    margin-bottom: 5rem;
+}
+.playcard .container .matter .cards{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.playcard .container .matter .cards .c{
+    background-image: radial-gradient(109.43% 90.28% at 50% 9.72%,rgba(61,77,119,.2) 0,transparent 100%),linear-gradient(0deg,hsla(0,0%,100%,.01) 4.87%,hsla(0,0%,100%,.06) 96.19%);
+    border-color: #ffffff1a;
+    border-width: 1px;
+    border-radius: 32px;
+    max-width: 25%;
+    /*display: flex;
+    flex-direction: column;*/
+}
+.playcard .container .matter .cards .c .polar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.playcard .container .matter .cards .c img{
+    width: 247px;
+    height: 221px;
+}
+.playcard .container .matter .cards .c .alpha{
+    padding: 32px;
+    max-width: 400px ;
+}
+.playcard .container .matter .cards .c .alpha h3{
+    color: rgb(255 255 255);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+.playcard .container .matter .cards .c .alpha p{
+    color: rgb(255 255 255);
+    opacity: .6;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+.playcard .container .matter .lowerplay{
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+}
+.playcard .container .matter .lowerplay .big{  
+    background-image: radial-gradient(109.43% 90.28% at 50% 9.72%,rgba(61,77,119,.2) 0,transparent 100%),linear-gradient(0deg,hsla(0,0%,100%,.01) 4.87%,hsla(0,0%,100%,.06) 96.19%);
+    border-color: #ffffff1a;
+    border-width: 1px;
+    border-radius: 32px;
+    width: 554px;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.playcard .container .matter .lowerplay .big .polo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playcard .container .matter .lowerplay .big .polo img{
+    height: 224px;
+    width: 524px;
+}
+.playcard .container .matter .lowerplay .big .write{
+    padding: 32px;
+    max-width: 400px ;
+}
+.playcard .container .matter .lowerplay .big .write h3{
+    color: rgb(255 255 255);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+.playcard .container .matter .lowerplay .big .write p{
+    color: rgb(255 255 255);
+    opacity: .6;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+.playcard .container .matter .lowerplay .small
+{
+    background-image: radial-gradient(109.43% 90.28% at 50% 9.72%,rgba(61,77,119,.2) 0,transparent 100%),linear-gradient(0deg,hsla(0,0%,100%,.01) 4.87%,hsla(0,0%,100%,.06) 96.19%);
+    border-color: #ffffff1a;
+    border-width: 1px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;     
+    width: 270px;
+    height: 380px; 
+}
+.playcard .container .matter .lowerplay .small .polor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playcard .container .matter .lowerplay .small .polor img{
+    width: 246px;
+    height: 221px;
+}
+.playcard .container .matter .lowerplay .small .write{
+    padding: 32px;
+    max-width: 400px ;
+}
+.playcard .container .matter .lowerplay .small .write h3{
+    color: rgb(255 255 255);
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+.playcard .container .matter .lowerplay .small .write p{
+    color: rgb(255 255 255);
+    opacity: .6;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+}
+.lowfoot{
+    padding-top: 128px;
+    display: flex;
+    gap: 24px;
+
+}
+.lowfoot .leftlow{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    max-width: 50%;
+}
+.lowfoot .leftlow .lowimg{
+    display: flex;
+    gap: 2.25rem;
+    margin-bottom: 48px;
+    align-items: center;
+}
+.lowfoot .leftlow .lowimg img{
+    width: 60px;
+    height: 50.39px;
+}
+.lowfoot .leftlow h3{
+    font-size: 48px;
+    color: rgb(18 25 38);
+    line-height: 1;
+    margin-bottom: 6px;
+    font-weight: inherit;
+}
+.lowfoot .leftlow p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: rgb(105 117 134);
+    margin-bottom: 1rem;
+    max-width: 60%;
+}
+.lowfoot .leftlow .rgtimg{
+    display: flex;
+    gap: 2.25rem;
+    margin-bottom: 48px;
+    align-items: center;
+}
+.lowfoot .leftlow .rgtimg img{
+   height: 36px;
+   width: 181px;
+}
+.lowfoot .leftlow .rgtimg .rgtimgone{
+    height: 36px;
+    width: 131px;
+}
+.lowfoot .leftlow span{
+    color: rgb(18 25 38);
+    font-size: .75rem;
+    line-height: 1rem;
+    font-weight: 500;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #12192614;
+    border-radius: 1.5rem;
+}
+.lastfoot{
+    padding-bottom: 153px;
+    margin-top: 128px;
+    padding-top: 73px;
+    position: relative;
+}
+.lastfoot .backgrund{
+    background-image: radial-gradient(76.08% 100% at 49.97% 100%,#20399e 0,#121926 100%);
+    transform: rotate(180deg);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 0;
+}
+.lastfoot .textureone{
+    background-image: url(https://copperx.io/_next/static/media/copper-lines.6acf35fe.svg);
+    background-repeat: repeat-x;
+    rotate: 180deg;
+    width: 100%;
+    height: 60%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+}
+.lastfoot .mutter {
+    position: relative;
+
+}
+.lastfoot .mutter .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 658px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+.lastfoot .mutter .container img{
+    height: 198px;
+    width: 198px;
+}
+.lastfoot .mutter .container h2{
+    line-height: 72px;
+    font-size: 48px;
+    color: rgb(255 255 255);
+    text-align: center;
+    font-weight: inherit;
+}
+.lastfoot .mutter .container p{
+    padding-top: 16px;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: rgb(255 255 255);
+}
+.lowerline{
+    padding-top: 51px;
+    padding-bottom: 51px;
+    background-color: rgb(18 25 38);
+    border-color: #ffffff1a;
+    border-top-width: 1px;
+    border-style: solid;
+}
+
+
+.lowerline .content{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: center;
+}
+.lowerline .content p{
+    color: rgb(255 255 255);
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-align: center;
+}
+.lowerline .content p span{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem
+}
+.lowerline .content p a{
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+.lowerline .follow{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.lowerline .follow p{
+    color: rgb(255 255 255);
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+.lowerline .follow a{
+    text-decoration: none;
+    color: inherit;
+    opacity: 1;
+    cursor: pointer;
+
+}
+.lowerline .follow a img{
+    height: 24px;
+    width: 24px;
+}
+
+
+
+
+/*.playcard .container .matter .lowerplay .big .polor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playcard .container .matter .lowerplay .big .polor img{
+    width: 246px;
+    height: 221px;
+}*/
+
+
+/*banner ends*/
+/*this is html starts
+    <div class="back"> <! built this again>
+        <div class="color"></div>
+        <div class="texture"></div>
+    </div>
+    <section class="herohead">
+    <div class="banner">
+        <div class="container">
+            <div class="text">
+                <div class="heading">
+                    <h1>Accept payment
+                        within minutes</h1>
+                </div>
+                <div class="sidetext">
+                    <p>Our world is rapidly moving towards blockchain, web3, and crypto as a payment option. Stay ahead to attract new customers and drive business growth with Copperx.</p>
+                    <a href="#">
+                        Get early access 
+                        <img src="https://copperx.io/#early-access" alt="arrow">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+this is html end*/
+
+
+
+
